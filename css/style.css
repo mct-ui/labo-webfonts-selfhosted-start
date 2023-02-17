@@ -1,0 +1,89 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
+/*
+    add all the @font-face rules here
+    Make one for each font weight
+    Give each font the same name, but with a different weight
+*/
+
+@font-face {
+    font-family: 'Inter Web';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("../fonts/Inter-Thin.woff2") format("woff2"),
+        url("../fonts/Inter-Thin.woff") format("woff");
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+html {
+    /* set the global font family to Inter with a fallback */
+    box-sizing: border-box;
+}
+
+/* Make the global font size larger on larger screens with 2 media queries */
+
+*,
+*:before,
+*:after {
+    font-size: 1rem;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: darkblue;
+    color: lavender;
+    padding: 2rem;
+}
+
+*+* {
+    margin-top: 2rem;
+}
+
+h3+* {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    /*
+        make sure the letter a is a single storey a like in the design.
+        Look at https://rsms.me/inter/lab/ to see what feature you need to achieve this
+    */
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+/*
+    Make sure the articles are displayed in a grid with flexbox to match the design
+    You will need to add some extra markup to make this work
+*/
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
+
+/* Make utility classes for the different font weights and use them in the html to match the design */
+
+.u-fw-100 {
+    font-weight: 100;
+}
