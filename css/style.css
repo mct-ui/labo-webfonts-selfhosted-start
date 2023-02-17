@@ -28,6 +28,10 @@
 html {
     /* set the global font family to Inter with a fallback */
     box-sizing: border-box;
+
+    /* anti-aliasing */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Make the global font size larger on larger screens with 2 media queries */
