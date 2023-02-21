@@ -27,6 +27,8 @@
 
 html {
     /* set the global font family to Inter with a fallback */
+
+    /* box-sizing */
     box-sizing: border-box;
 
     /* anti-aliasing */
